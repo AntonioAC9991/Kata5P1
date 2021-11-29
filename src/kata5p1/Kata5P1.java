@@ -2,11 +2,13 @@ package kata5p1;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import static kata5p1.CreateTable.createNewTable;
 public class Kata5P1 {
     public static void main(String[] args) {
         connect();
+        createNewTable();
         SelectApp app = new SelectApp();
-app.    selectAll();
+        app.selectAll();
     }
     private static void connect() {
         Connection conn = null;
